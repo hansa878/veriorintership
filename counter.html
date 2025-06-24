@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styled Counter App</title>
+  <style>
+    body {
+      background-color: #fbe9e7;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 270px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    #counter {
+      font-size: 60px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .buttons button {
+      font-size: 18px;
+      padding: 10px 18px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .btn-increase { background-color: blue; }
+    .btn-reset { background-color: green; }
+    .btn-decrease { background-color: red; }
+    .btn-dark { background-color: black; }
+    .btn-change { background-color: orange; }
+
+    .dark-mode {
+      background-color: #1c1c1c;
+      color: white;
+    }
+
+    .dark-mode .card {
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body id="body">
+
+  <div class="card" id="card">
+    <h2 id="title">Counter</h2>
+    <div id="counter">0</div>
+
+    <div class="buttons">
+      <button class="btn-increase" onclick="increase()">+</button>
+      <button class="btn-reset" onclick="reset()">Reset</button>
+      <button class="btn-decrease" onclick="decrease()">-</button>
+    </div>
+
+    <div class="buttons">
+      <button class="btn-dark" onclick="toggleDarkMode()">Dark Mode</button>
+      <button class="btn-change" onclick="changeText()">Change Text</button>
+    </div>
+  </div>
+
+  <script>
+    var count = 0;
+
+    function increase() {
+      count++;
+      document.getElementById("counter").innerHTML = count;
+    }
+
+    function decrease() {
+      count--;
+      document.getElementById("counter").innerHTML = count;
+    }
+
+    function reset() {
+      count = 0;
+      document.getElementById("counter").innerHTML = count;
+    }
+
+    function toggleDarkMode() {
+      var body = document.getElementById("body");
+      var card = document.getElementById("card");
+      if (body.classList.contains("dark-mode")) {
+        body.classList.remove("dark-mode");
+        card.classList.remove("dark-mode");
+      } else {
+        body.classList.add("dark-mode");
+        card.classList.add("dark-mode");
+      }
+    }
+
+    function changeText() {
+      document.getElementById("title").innerHTML = "Let's Count!";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON DATA</title>
+    </head>
+    <body>
+        <h2>User Data from JSONPlaceholder</h2>
+        <div id="user-list"></div>
+        <script>
+            fetch('https://jsonplaceholder.typicode.com/users')
+            .then(Response => Response.json())
+            .then(data => {
+                const userlist=document.getElementById('user-list');
+                let content='';
+                data.forEach(user => {
+                    content += `<p><strong>${user.name}</strong> (${user.email})<br>Address: ${user.address.city}</p>`;
+                    
+                });
+                userlist.innerHTML=content;
+            })
+            .catch(error => console.error('error', error));
+        </script>
+    </body>
+</html>
+  

@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  background-image: url(https://www.shutterstock.com/image-vector/abstract-white-background-modern-design-600nw-2478912715.jpg);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+  .filter {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+select {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+}
+
+.product p {
+  margin: 0;
+  color: #888;
+}
