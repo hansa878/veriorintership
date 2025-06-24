@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body, html {
   height: 100%;
@@ -112,3 +113,119 @@ li:hover {
 .delete-btn:hover {
   color: #c82333;
 }
+=======
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Container box */
+/* Make full page centered with background image */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+              url(https://www.shutterstock.com/image-vector/supermarket-outside-parking-outdoor-glass-260nw-2299130009.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Center content */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Container box */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input and button */
+.input-area {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 12px 16px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* List style */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #f0f8ff;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+li:hover {
+  background: #d6ecff;
+}
+
+/* Trash icon */
+.delete-btn {
+  color: #dc3545;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.delete-btn:hover {
+  color: #c82333;
+}
+>>>>>>> 8bf787cc250d3a30ca7765bbdfba38cbaf17e7e8
