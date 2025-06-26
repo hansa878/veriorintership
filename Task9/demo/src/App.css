@@ -1,0 +1,65 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/691/884/small/blue-question-mark-background-with-text-space-quiz-symbol-vector.jpg);
+}
+
+.question-box {
+  background-color: #f4f4f4;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.question-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  transition: all 0.3s;
+}
+
+.option-btn:hover {
+  background-color: #d3d3d3;
+}
+
+.option-btn.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+.option-btn.wrong {
+  background-color: #f44336;
+  color: white;
+}
+
+.result {
+  margin-top: 50px;
+}
+
+.restart-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
