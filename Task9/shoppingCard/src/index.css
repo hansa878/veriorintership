@@ -1,0 +1,57 @@
+
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.heading {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* 👈 Cart neeche aayega */
+  align-items: center;
+  gap: 40px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.button {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-box {
+  background-color: #fff3cd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
